@@ -1,0 +1,7 @@
+<div class="main-container">
+    <div *ngIf="yesNo$ | async as user">
+        <img src="{{user.image}}">
+        <h3> {{ user.answer | titlecase }} </h3>
+    </div>
+    <button (click)="getYesNo()"> Preguntar </button>
+</div>
